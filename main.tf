@@ -1,4 +1,9 @@
 terraform {
+  backend "s3" {
+    bucket = "praful-terraform-project4-s3-2026"
+    key    = "project4/terraform.tfstate"
+    region = "ap-south-1"
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
