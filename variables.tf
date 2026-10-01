@@ -33,3 +33,7 @@ variable "ssh_allowed_cidr" {
   type        = string
   default     = "116.74.252.161/32"
 }
+variable "ami_id" {
+  description = "AMI ID for the EC2 instance"
+  type        = string
+}
